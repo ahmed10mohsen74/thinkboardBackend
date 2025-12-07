@@ -13,11 +13,7 @@ console.log("process.env.MONGO_URL:", process.env.MONGO_URL);
 console.log("process.env.PORT:", process.env.PORT);
 
 connectDB()
-app.use(cors({
-    origin: 'https://thinkboard-frontend-eta.vercel.app',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true
-}))
+app.use(cors())
 
 app.use(express.json())
 
