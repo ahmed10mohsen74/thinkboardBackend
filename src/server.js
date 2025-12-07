@@ -14,7 +14,7 @@ console.log("process.env.PORT:", process.env.PORT);
 
 connectDB()
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://thinkboard-frontend-eta.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }))
