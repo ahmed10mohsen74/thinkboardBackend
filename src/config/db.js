@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 export const connectDB = async () => {
     try {
         // await mongoose.connect("http://localhost:27017")
-        mongoose.connect('mongodb://127.0.0.1:27017/noteMohsen');
+        mongoose.connect('mongodb+srv://amgaming195_db_user:r97CneVTqvgCVUgL@cluster0.qj3xlnb.mongodb.net/notes-db?appName=Cluster0');
         console.log("DB connected");
     }
     catch (error) {
@@ -11,3 +11,4 @@ export const connectDB = async () => {
         process.exit(1);
     }
 }
+// mongodb+srv://amgaming195_db_user:r97CneVTqvgCVUgL@cluster0.qj3xlnb.mongodb.net/?appName=Cluster0 
