@@ -6,7 +6,7 @@ export async function getAllNotes(req, res) {
         res.json(notes);
     } catch (error) {
         console.log("error in get all notes", error);
-        res.status(500).json({ message: "Server Error" });
+        res.status(500).json({ message: "Server Error in gitting allnotes" });
     }
 }
 
